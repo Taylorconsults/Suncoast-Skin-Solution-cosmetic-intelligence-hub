@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suncoast Skin Solutions - Complete Cosmetic Intelligence Hub</title>
-    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); }
         .gradient-bg { background: linear-gradient(135deg, #ff7b00 0%, #ff9500 50%, #ffb347 100%); }
-        .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: 12px; padding: 24px; }
+        .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
         .location-card { background: white; border-radius: 8px; padding: 16px; margin-bottom: 12px; border-left: 4px solid #ff7b00; transition: all 0.3s ease; }
         .location-card:hover { transform: translateX(4px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
         .hidden-locations { display: none; }
@@ -18,16 +18,20 @@
         .provider-section { background: white; border-radius: 8px; padding: 20px; margin-bottom: 16px; border: 1px solid #e5e7eb; }
     </style>
 </head>
-<body>
+<body class="min-h-screen">
     <div class="gradient-bg text-white py-8 px-6">
-        <h1 class="text-4xl font-bold mb-2"><i class="fas fa-brain mr-3"></i>Complete Cosmetic Intelligence Hub</h1>
-        <p class="text-xl opacity-90">Suncoast Skin Solutions - Strategic Operations Platform</p>
-        <p class="text-sm opacity-75 mt-2">Comprehensive management system for 38 locations & 24 providers across Florida</p>
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-4xl font-bold mb-2">
+                <i class="fas fa-brain mr-3"></i>Complete Cosmetic Intelligence Hub
+            </h1>
+            <p class="text-xl opacity-90">Suncoast Skin Solutions - Strategic Operations Platform</p>
+            <p class="text-sm opacity-75 mt-2">Comprehensive management system for 38 locations & 24 providers across Florida</p>
+        </div>
     </div>
     
     <div class="max-w-7xl mx-auto px-6 py-8">
         <!-- Complete Provider Directory -->
-        <div class="glass-card mb-8">
+        <div class="glass-card">
             <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                 <i class="fas fa-users text-green-600 mr-3"></i>Complete Provider Directory
                 <span class="ml-2 bg-green-100 text-green-800 text-sm px-2 py-1 rounded-full">24 Providers</span>
@@ -50,7 +54,7 @@
         </div>
 
         <!-- Visit Tracking System -->
-        <div class="glass-card mb-8">
+        <div class="glass-card">
             <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                 <i class="fas fa-clipboard-list text-orange-600 mr-3"></i>Visit Tracking System
             </h2>
@@ -153,7 +157,6 @@
                         </div>
                     </div>
 
-                    <!-- Continue with remaining 30 locations... -->
                     <div class="text-center py-4">
                         <p class="text-green-600 font-bold"><i class="fas fa-check-circle mr-2"></i>All 38 locations loaded successfully!</p>
                         <p class="text-sm text-gray-500 mt-1">Complete site-level tracking across all Florida operations</p>
